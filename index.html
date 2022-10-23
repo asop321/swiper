@@ -15,7 +15,31 @@
 </head>
 
 <body>
+    <main>
+        <section class="swiper-wrapper">
+            <article class="swiper-slide">1</article>
+            <article class="swiper-slide">2</article>
+            <article class="swiper-slide">3</article>
+            <article class="swiper-slide">4</article>
+            <article class="swiper-slide">5</article>
+        </section>
+    </main>
 
+    <script>
+        //기본 스와이퍼 연결
+        const swiper = new Swiper("main", {
+            speed: 500,//스와이프시 패널이 넘어가는 속도
+            loop: true,//스와이프를 순환
+            direction: "horizontal",//가로로 , "vertical" 세로로
+            grabCursor: true,
+            slidesPerView: "auto",//숫자 (해당갯수단위로 패널 보임), "auto" = 100%,특정크기를 지정
+            spaceBetween: 30,//패널사이 간격 단위px
+            centeredSlides: true//활성화되 패널을 가운데 배치
+
+
+        });
+
+    </script>
 </body>
 
 </html>
